@@ -30,13 +30,14 @@
           >
 
           <button
-            class="navbar-toggler"
+            class="navbar-toggler text-center"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation"
+            
           >
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -47,17 +48,17 @@
                 <a
                   class="nav-link active text-primary"
                   aria-current="page"
-                  href="#"
+                  href="#home"
                   >Home</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#about">About</a>
               </li>
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
-                  href="#"
+                  href="services"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
@@ -65,8 +66,8 @@
                   Services
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#services">Action</a></li>
+                  <li><a class="dropdown-item" href="#services">Another action</a></li>
                   <li><hr class="dropdown-divider" /></li>
                   <li>
                     <a class="dropdown-item" href="#">Something else here</a>
@@ -74,10 +75,10 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Our team</a>
+                <a class="nav-link" href="#team">Our team</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -87,7 +88,7 @@
       <!-- Navigarion end -->
       <!-- slieder start -->
 
-      <div id="carouselExampleDark" class="carousel carousel-dark slide">
+      <div id="carouselExampleDark" class="carousel carousel-dark slide" id="home">
         <div class="carousel-indicators">
           <button
             type="button"
@@ -163,7 +164,7 @@
     </header>
 
     <!-- about start -->
-    <section class="about my-5">
+    <section class="about my-5" id="about">
       <div class="container text-center">
         <h1 data-aos="fade-up" data-aos-offset="200" >About <span class="text-primary">me</span></h1>
         <hr class="w-25 m-auto" />
@@ -278,7 +279,7 @@
     <!-- about end -->
 
     <!-- services start -->
-    <div class="cotainer py-5 bg-light">
+    <div class="cotainer py-5 bg-light" id="services">
       <div class="container text-center">
         <h1 data-aos="zoom-in-left">Our<span class="text-primary"> Services</span></h1>
         <hr class="w-25 m-auto" />
@@ -371,7 +372,7 @@
     <!-- services end -->
 
     <!-- Team start -->
-    <section class="text-center m-5">
+    <section class="text-center m-5" id="team">
       <div class="container">
         <div class="container text-center mb-5">
           <h1  data-aos="flip-up">Our<span class="text-primary"> Team</span></h1>
@@ -430,7 +431,7 @@
     <!-- footer start -->
 
       <footer>
-        <div class="container m-5">
+        <div class="container m-5" id="contact">
           <div class="container text-center mb-5">
             <h1>Feel free<span class="text-primary"> to Connect</span></h1>
             <hr class="w-25 m-auto" />
