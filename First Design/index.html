@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Techno Web</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <!-- navigation starts -->
+      <nav class="navbar navbar-expand-lg bg-body-white border-bottom fixed-top bg-white">
+        <div class="container-fluid">
+          <a class="navbar-brand fs-2" href="#"
+            >Techno<span class="text-primary fs">Web</span></a
+          >
+
+          <button
+            class="navbar-toggler text-center"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-primary"
+                  aria-current="page"
+                  href="#home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="services"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Services
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#services">Action</a></li>
+                  <li><a class="dropdown-item" href="#services">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#team">Our team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Navigarion end -->
+      <!-- slieder start -->
+
+      <div id="carouselExampleDark" class="carousel carousel-dark slide" id="home">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active " data-aos="zoom-out-left" data-bs-interval="10000">
+            <img src="/images/banner.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-white">First slide label</h5>
+              <p class="text-white">
+                Some representative placeholder content for the first slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item" data-aos="zoom-out-left" data-bs-interval="2000">
+            <img src="/images/banner1.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-white">Second slide label</h5>
+              <p class="text-white">
+                Some representative placeholder content for the second slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item" data-aos="zoom-out-left">
+            <img src="/images/banner2.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-white">Third slide label</h5>
+              <p class="text-white">
+                Some representative placeholder content for the third slide.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- slieder end -->
+    </header>
+
+    <!-- about start -->
+    <section class="about my-5" id="about">
+      <div class="container text-center">
+        <h1 data-aos="fade-up" data-aos-offset="200" >About <span class="text-primary">me</span></h1>
+        <hr class="w-25 m-auto" />
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-12 col-md-6 col-lg-6 " data-aos="zoom-in">
+            <h1 class="p-2">
+              What do you <span class="text-primary">want to know..?</span>
+            </h1>
+            <p class="p-2">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam
+              dolorum, hic, libero minus, doloremque consequuntur at alias
+              consequatur similique nobis facilis delectus quasi odio. Similique
+              sint quidem iste culpa dolorum!
+            </p>
+            <button type="button" class="btn btn-light text-primary mb-4">
+              Know more about me
+            </button>
+
+            <div class="accordion" id="accordionExample" data-aos="zoom-in-down">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    My Education
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <strong>This is the first item's accordion body.</strong> It
+                    is shown by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    My Hobbies
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <strong>This is the second item's accordion body.</strong>
+                    It is hidden by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    My wrok
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It
+                    is hidden by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 m-auto text-center " data-aos="flip-left">
+            <img
+              src="/images/s4.jpg"
+              alt=""
+              class="img-fluid img-thumbnail mt-5"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about end -->
+
+    <!-- services start -->
+    <div class="cotainer py-5 bg-light" id="services">
+      <div class="container text-center">
+        <h1 data-aos="zoom-in-left">Our<span class="text-primary"> Services</span></h1>
+        <hr class="w-25 m-auto" />
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-4 col-lg-4 mt-3" data-aos="zoom-in-right">
+            <div class="card-body border bg-white p-3 rounded-2">
+              <h5 class="card-title">
+                <i class="fa-brands fa-wordpress m-3"></i> Web Devloper
+              </h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Know More..</a>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-12 col-md-4 col-lg-4 mt-3" data-aos="zoom-in-right">
+            <div class="card-body border bg-white p-3 rounded-2">
+              <h5 class="card-title">
+                <i class="fa-solid fa-shield-halved m-3"></i>App Devloper
+              </h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Know More..</a>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-12 col-md-4 col-lg-4 mt-3" data-aos="zoom-in-right">
+            <div class="card-body border bg-white p-3 rounded-2">
+              <h5 class="card-title">
+                <i class="fa-regular fa-circle-user m-3"></i>Graphics Designer
+              </h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Know More..</a>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-12 col-sm-12 col-md-4 col-lg-4 mt-3" data-aos="zoom-in-right">
+            <div class="card-body border bg-white p-3 rounded-2">
+              <h5 class="card-title">
+                <i class="fa-brands fa-docker m-3"></i>Database Engineer
+              </h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Know More..</a>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-12 col-md-4 col-lg-4 mt-3" data-aos="zoom-in-right">
+            <div class="card-body border bg-white p-3 rounded-2">
+              <h5 class="card-title">
+                <i class="fa-solid fa-fire m-3"></i>Package app developer
+              </h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Know More..</a>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-12 col-md-4 col-lg-4 mt-3" data-aos="zoom-in-right">
+            <div class="card-body border bg-white p-3 rounded-2">
+              <h5 class="card-title">
+                <i class="fa-brands fa-squarespace m-3"></i>Frondted developer
+              </h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Know More..</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- services end -->
+
+    <!-- Team start -->
+    <section class="text-center m-5" id="team">
+      <div class="container">
+        <div class="container text-center mb-5">
+          <h1  data-aos="flip-up">Our<span class="text-primary"> Team</span></h1>
+          <hr class="w-25 m-auto" />
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-4 col-lg-4 " data-aos="flip-right">
+            <div class="card-body border p-3 mb-3">
+              <img
+                src="/images/s1.jpg"
+                alt=""
+                class="rounded-circle border border-primary p-2 img-fluid"
+              />
+              <h5 class="card-title text-center">Akansha</h5>
+              <p class="card-text text-center">Backend developer</p>
+              <div class="text-center">
+                <a href="#" class="btn btn-primary text-center">Know More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-4 col-lg-4" data-aos="flip-right">
+            <div class="card-body border p-3 mb-3">
+              <img
+                src="/images/s2.jpg"
+                alt=""
+                class="rounded-circle border border-primary p-2 img-fluid"
+              />
+              <h5 class="card-title text-center">Pratik</h5>
+              <p class="card-text text-center">Full Stack developer</p>
+              <div class="text-center">
+                <a href="#" class="btn btn-primary text-center">Know More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-4 col-lg-4" data-aos="flip-right">
+            <div class="card-body border p-3 mb-3">
+              <img
+                src="/images/s3.jpg"
+                alt=""
+                class="rounded-circle border border-primary p-2 img-fluid "
+              />
+              <h5 class="card-title text-center">Shikha</h5>
+              <p class="card-text text-center">Frondted Developer</p>
+              <div class="text-center">
+                <a href="#" class="btn btn-primary text-center">Know More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team End -->
+
+    <!-- footer start -->
+
+      <footer>
+        <div class="container m-5" id="contact">
+          <div class="container text-center mb-5">
+            <h1>Feel free<span class="text-primary"> to Connect</span></h1>
+            <hr class="w-25 m-auto" />
+          </div>
+
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+              <form class="row g-3" data-aos="fade-down" data-bs-interval="200">
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputPassword4" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="inputPassword4">
+                </div>
+                <div class="col-12">
+                  <label for="inputAddress" class="form-label">Address</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                </div>
+                
+                <div class="col-md-6">
+                  <label for="inputCity" class="form-label">City</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="col-md-4">
+                  <label for="inputState" class="form-label">State</label>
+                  <select id="inputState" class="form-select">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                  </select>
+                </div>
+                <div class="col-md-2">
+                  <label for="inputZip" class="form-label">Zip</label>
+                  <input type="text" class="form-control" id="inputZip">
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                      Check me out
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary">Sign in</button>
+                </div>
+              </form>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 m-auto text-center p-4" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
+              <img src="/images/s5.jpg" alt="" class="img-fluid img-thumbnail">
+            </div>
+          </div>
+  
+      </footer>
+
+    <!-- footer end -->
+    <div class="container-fluid bg-primary text-white p-3 fw-bolder text-center fs-5"  >
+    <h2 data-aos="flip-left"
+    data-aos-easing="ease-out-cubic"
+    data-aos-duration="2000">Developed by Satish</h2>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
